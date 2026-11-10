@@ -12,6 +12,7 @@ namespace Week11DataStructures
             btnProductCatalog.Click += btnProductCatalog_Click;
             btnProductID.Click += btnProductID_Click;
             btnStudentGrade.Click += btnStudentGrade_Click;
+            btnCountryCode.Click += btnCountryCode_Click;
         }
 
 
@@ -56,6 +57,15 @@ namespace Week11DataStructures
             using (Form6 studentForm = new Form6())
             {
                 studentForm.ShowDialog(this);
+            }
+        }
+
+        private void btnCountryCode_Click(
+            object sender, EventArgs e)
+        {
+            using (Form7 countryForm = new Form7())
+            {
+                countryForm.ShowDialog(this);
             }
         }
 
