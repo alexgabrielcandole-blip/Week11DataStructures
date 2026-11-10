@@ -10,6 +10,7 @@ namespace Week11DataStructures
             btnEmployeeDirectory.Click += btnEmployeeDirectory_Click;
             btnLibraryRegistry.Click += btnLibraryRegistry_Click;
             btnProductCatalog.Click += btnProductCatalog_Click;
+            btnProductID.Click += btnProductID_Click;
         }
 
 
@@ -40,7 +41,12 @@ namespace Week11DataStructures
             }
         }
 
-
-
+        private void btnProductID_Click(object sender, EventArgs e)
+        {
+            using (Form5 productForm = new Form5())
+            {
+                productForm.ShowDialog(this);
+            }
+        }
     }
 }
