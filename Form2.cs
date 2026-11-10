@@ -13,6 +13,7 @@ namespace Week11DataStructures
         public Form2()
         {
             InitializeComponent();
+            this.Load += (sender, e) => ResponsiveForm.Fit(this);
 
             // Connect buttons to their functions
             btnAddEmployee.Click += btnAddEmployee_Click;
