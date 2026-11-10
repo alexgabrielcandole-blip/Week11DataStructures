@@ -11,6 +11,7 @@ namespace Week11DataStructures
             btnLibraryRegistry.Click += btnLibraryRegistry_Click;
             btnProductCatalog.Click += btnProductCatalog_Click;
             btnProductID.Click += btnProductID_Click;
+            btnStudentGrade.Click += btnStudentGrade_Click;
         }
 
 
@@ -48,5 +49,15 @@ namespace Week11DataStructures
                 productForm.ShowDialog(this);
             }
         }
+
+        private void btnStudentGrade_Click(
+            object sender, EventArgs e)
+        {
+            using (Form6 studentForm = new Form6())
+            {
+                studentForm.ShowDialog(this);
+            }
+        }
+
     }
 }
